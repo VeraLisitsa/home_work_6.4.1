@@ -1,4 +1,4 @@
-public class CourierDelivery implements Delivery {  //"SOLID-S"
+public class CourierDelivery implements Delivery {
 
     @Override
     public String msg() {

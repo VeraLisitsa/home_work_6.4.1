@@ -1,7 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListOfGoods {    //"SOLID-S"
+public class ListOfGoods {    //"SOLID-S
+    // класс описывает только список товаров и работу с этим списком
     private static ListOfGoods listOfGoods;
     protected static List<Goods> list;
 

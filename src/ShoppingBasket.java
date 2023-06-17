@@ -3,7 +3,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-public class ShoppingBasket {   //"SOLID-S"
+public class ShoppingBasket {
     private Map<Goods, Integer> shoppingBasket = new HashMap<>();
 
     public ShoppingBasket() {

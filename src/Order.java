@@ -1,5 +1,7 @@
-public class Order {  //"SOLID-S"
-    private static final String INDEX = "A122"; // "Магические числа"
+public class Order {
+    private static final String INDEX = "A122";
+    // "Магические числа"
+    // значение параметра не используется напрямую, для него заведена специальная константа INDEX
     private String orderId;
 
     private static int countId;

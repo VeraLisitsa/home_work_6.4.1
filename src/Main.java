@@ -38,6 +38,7 @@ public class Main {
             System.out.println("Введите количество товара:");
             int amountOfProducts = scanner.nextInt();
             basket.addProduct(ListOfGoods.getGoods(ProductId), amountOfProducts); //"DRY
+            // повторяющаяся операция добавления продукта в корзину вынесена в отдельный метод add Product
             System.out.println("Продолжить наполнять корзину? Y/N");
             String input = scanner.next();
             if (input.equals("N")) {
@@ -66,6 +67,10 @@ public class Main {
         System.out.println("S - самовывоз");
         String deliveryOption = scanner.next();
         Delivery delivery;
+        // "SOLID-D"
+        //не надо беспокоиться о деталях реализации доставки, необходимо только с помощью конструктора
+        //указать тип доставки, остальную реализацию менять не нужно
+
         if (deliveryOption.equals("C")) {
             delivery = new CourierDelivery();
         } else {

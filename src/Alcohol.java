@@ -1,4 +1,10 @@
-public class Alcohol extends Product implements Goods, Licensed { //"SOLID-I"
+public class Alcohol extends Product implements Goods, Licensed {
+    // "SOLID-O
+    //данный класс является расширением класс Product, обладает всеми свойствами исходного класса,
+    // но была добавлена новая функциональность (методы интерфейса Licensed)
+
+    //"SOLID-L"
+    // Данный класс может сыграть роль своего предка - класс Product(товары)
 
     boolean isLisenced;
 

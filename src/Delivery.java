@@ -1,4 +1,4 @@
-public interface Delivery {   //"SOLID-O, SOLID-D"
+public interface Delivery {
     public String msg();
 
 }
